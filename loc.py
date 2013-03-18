@@ -13,7 +13,7 @@ def member(element, lst):
 	return False
 	
 def main():
-	loc = locator.module_path()
+	loc = os.path.abspath(__file__)
 	onlyfiles = [ f for f in listdir(loc) if isfile(join(loc,f)) ]
 	realNames = []
 	for fname in onlyfiles:
